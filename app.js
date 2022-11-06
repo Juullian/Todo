@@ -124,5 +124,6 @@ app.listen(port, error => {
         console.log('Issue in connecting to the server');
     } else {
         console.log('Successfully connected to the server');
+        console.log(`localhost:${port}`);
     }
 });
