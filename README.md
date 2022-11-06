@@ -1,7 +1,13 @@
-## Run
+## Install Packages and start
 
 ```bash
-npm install
+npm run install
+```
+
+## Just start
+
+```bash
+npm run start
 ```
 
 ## Todo
