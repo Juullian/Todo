@@ -1,0 +1,199 @@
+:root {
+    --inputandbuttoncolor: #808a91;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #323333;
+    color: white;
+}
+
+body.light {
+    font-family: sans-serif;
+    background-color: #fdfdfd;
+    color: #000000;
+}
+
+#todoinput,
+#editMessage {
+    border: none;
+    background-color: var(--inputandbuttoncolor);
+    border-radius: 5px;
+    padding: 7px;
+    width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#todoList {
+    font-size: 20px;
+}
+
+#todoinput {
+    font-size: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-left: 13px !important;
+}
+
+.save-button {
+    padding: 20px;
+    font-size: 15px;
+    padding-bottom: 15px !important;
+    padding-top: 15px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.edit-button {
+    margin-left: 10px !important;
+}
+
+button[type='submit'] {
+    padding: 5px 10px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: var(--inputandbuttoncolor);
+    border: 1px solid var(--inputandbuttoncolor);
+}
+
+button[type='submit']:hover {
+    background: var(--inputandbuttoncolor);
+    opacity: 0.5;
+    box-shadow: 0.1px 0.1px 10px 0.1px;
+}
+
+.confirm {
+    display: none;
+}
+
+.confirm > div:first-of-type {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    left: 0px;
+}
+
+.confirm > div:last-of-type {
+    padding: 10px 20px;
+    background: var(--inputandbuttoncolor);
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.confirm > div:last-of-type div:first-of-type {
+    min-width: 150px;
+    padding: 10px;
+    background: var(--inputandbuttoncolor);
+}
+.confirm > div:last-of-type div:last-of-type {
+    text-align: right;
+    background: var(--inputandbuttoncolor);
+}
+
+.edit {
+    display: none;
+}
+
+.edit > div:first-of-type {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    left: 0px;
+}
+
+.edit > div:last-of-type {
+    padding: 10px 20px;
+    background: var(--inputandbuttoncolor);
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.edit > div:last-of-type div:first-of-type {
+    min-width: 150px;
+    padding: 10px;
+    background: var(--inputandbuttoncolor);
+}
+.edit > div:last-of-type div:last-of-type {
+    text-align: right;
+    background: var(--inputandbuttoncolor);
+}
+
+.noValueError {
+    display: none;
+}
+
+.noValueError > div:first-of-type {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    left: 0px;
+}
+
+.noValueError > div:last-of-type {
+    padding: 10px 20px;
+    background: var(--inputandbuttoncolor);
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.noValueError > div:last-of-type div:first-of-type {
+    min-width: 150px;
+    padding: 10px;
+    background: var(--inputandbuttoncolor);
+}
+.noValueError > div:last-of-type div:last-of-type {
+    text-align: right;
+    background: var(--inputandbuttoncolor);
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    margin-left: -7.8px;
+    margin-top: -7.8px;
+    margin-right: -7.8px;
+    margin-bottom: 0px;
+}
+
+.topnav button[type='submit'],
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #323333;
+    border: none;
+}
+
+.topnav a {
+    float: left;
+    margin: 10px;
+}

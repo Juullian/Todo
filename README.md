@@ -1,1 +1,4 @@
-# Todo
+ToDo:
+Firebase
+Searchbar
+Todos abhacken

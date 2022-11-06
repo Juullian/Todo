@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo App</title> 
+        <link rel='stylesheet' href='/css/style.css'>
+    </head>
+  
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <div>
+            <div class="topnav">
+                <form action="/delAlltodo" method="POST">
+                    <button class="sav se-button" type="submit">Delete all</button>
+                </form>
+                <a>Todo App</a>
+            </div> 
+                
+            <div>
+                <form id="form" action="/newtodo" method="POST">
+                    <div class="input-group">
+                        <input id="input" class="form-control inpt" placeholder="Enter todo list item" value="" name="task">
+                        <span>
+                            <button id="btn-add" type="submit" class="btn add-btn">Add</button>
+                        </span>
+                    </div>			     
+                </form>        
+            </div>
+            <div class="confirm">
+                <div>
+                  <div id="confirmMessage"></div>
+                  <div>
+                    <button id="confirmNo" type="submit">No</button>
+                    <button id="confirmEdit" type="submit">Edit</button>
+                    <button onclick="saveForm()" id="confirmYes" type="submit">Yes</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container inner">
+            <ul id="list" class="list col-lg-6 col-8 mx-auto">
+                <!-- <li><input type="checkbox" class="checkbox">this is a todo item </li>
+                <li><input type="checkbox" class="checkbox">this is a todo item </li> -->
+                <% for(var i=0; i<todoList.length; i++){ %>
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                       <%= todoList[i].name %>
+                        <a href="/delete/<%= todoList[i]._id %> " class="del"> 
+                            <button type="submit">Delete <%= todoList[i]._id %></button>
+                        </a>
+                        
+                        <a>
+                            <button type="submit" id="" onclick="editForm()">Edit <%= todoList[i]._id %></button>
+                        </a>
+
+
+                        <div class="edit">
+                            <div>
+                                <form id="form" action="/edit/<%= todoList[i]._id %>" method="POST">
+                                    <div>
+                                        <input id="input" placeholder="<%= todoList[i]._id %>" value="" name="task">
+                                        <span>
+                                            <button id="editYes" type="submit">Yes</button>
+                                            <button id="editNo" type="submit">No</button> 
+                                        </span> 
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </li>
+                <% } %>
+
+
+
+            </ul>
+        </div>
+
+        <script src="/javascript/index.js"></script>
+    </body>
+</html>
