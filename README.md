@@ -1,4 +1,9 @@
-ToDo:
-Firebase
+## Run
+
+```bash
+npm install
+```
+
+## Todo
+
 Searchbar
-Todos abhacken
