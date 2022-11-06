@@ -1,10 +1,10 @@
-## Install Packages and start
+## Install Packages
 
 ```bash
 npm run install
 ```
 
-## Just start
+## Start
 
 ```bash
 npm run start

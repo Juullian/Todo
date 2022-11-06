@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "nodemon .",
-        "install": "npm install mongoose nodemon ejs body-parser express && nodemon ."
+        "install": "npm install mongoose nodemon ejs body-parser express"
     },
     "author": "vinita",
     "license": "ISC",
