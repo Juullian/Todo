@@ -8,7 +8,7 @@ var port = process.env.PORT || 8082;
 //db connection with mongoose(mongodb)
 mongoose
     .connect(
-        'mongodb+srv://admin:uv1Uee550cHbcFVn@test.wcdtbi5.mongodb.net/?retryWrites=true&w=majority',
+        '',
         {
             useNewUrlParser: true,
             useUnifiedTopology: true,
